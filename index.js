@@ -71,11 +71,7 @@ const callPairs = new Map();
 const socketToUidMap = new Map();
 const uidToSocketMap = new Map();
 
-// Static file serving
-app.use(express.static(path.join(__dirname, 'client/build')));
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-});
+
 
 // make sure this file exports: `exports.Prompts = [ ... ];`
 
