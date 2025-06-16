@@ -5,7 +5,7 @@ const cors = require('cors');
 const path = require('path');
 const { Resend } = require("resend");
 require('dotenv').config();
-const { Prompts } = require('../../lingorandom-dir/langrandom/src/Prompts');
+const { Prompts } = require('/Prompts');
 
 const app = express();
 const server = http.createServer(app);
